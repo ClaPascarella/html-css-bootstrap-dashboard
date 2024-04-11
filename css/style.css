@@ -1,6 +1,35 @@
-.mycolor {
+.sidebar {
+    width: 8rem;
     background-color: rgba(5,30,52,255);
+    height: 150vh;
+    background-image: url(../img/sidebar-bg.png);
+}
+
+.big_container {
+    /* background-color: red; */
+    width: 90%;
+    margin-left: 8rem;
+    position: absolute;
+    top: 3.33rem;
+}
+
+.logo {
+    width: 20px;
+}
+
+.myspace {
+    margin-top: -15rem;
+}
+
+.myspace2 {
+    margin-top: 55rem;
 }
 
 
 
+/* <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul> */
+       
