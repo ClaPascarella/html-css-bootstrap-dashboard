@@ -21,10 +21,12 @@
     <!-- NAVBAR -->
     <div class="container-fluid fixed-top bg-light">
         <div class="row">
-            <div class="col-1 mt-3">
-                <img src="./img/logo.svg" alt="">
+
+            <div class="col-1 col-md-3 col-lg-1 mt-3">
+                <img src="./img/logo.svg" class="img-fluid" alt="">
             </div>
-            <div class="col-9 ms-5">
+
+            <div class="col-4 col-md-6 col-lg-9 ms-5">
                 <nav class="navbar bg-body-tertiary">
                     <form class="container-fluid">
                         <div class="input-group">
@@ -33,7 +35,7 @@
                     </form>
                 </nav>
             </div>
-            <div class="col-1 d-flex flex-row mt-3">
+            <div class="col-1 col-md-2 col-lg-1 d-flex flex-row mt-3">
                 <div class="ms-4">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -46,8 +48,17 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
 
-                <div class="ms-4 text-warning">
-                    <i class="fa-solid fa-bell"></i>
+                <div class="ms-4">
+                  <div class="dropdown border border-0">
+                    <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell text-warning"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div> 
                 </div>
             </div>
         </div>
@@ -63,33 +74,41 @@
             
            <div class="myspace3">
                 <div class="row">
-                    <div class="text-light d-flex flex-row  justify-content-center align-items-center">
-                        <i class="fa-solid fa-house "></i>
-                        <p class=" ms-2 mt-3 logo_title">Home</p>
-                    </div>
+                   <div class="col-12">
+                    <div class="text-light d-flex flex-row  justify-content-center align-items-center logos">
+                      <i class="fa-solid fa-house "></i>
+                      <p class=" ms-2 mt-3">Home</p>
+                  </div>
+                   </div>
                 </div>
 
                 <div class="row">
-                    <div class="text-light d-flex flex-row  justify-content-center align-items-center">
+                    <div class="col-12">
+                      <div class="text-light d-flex flex-row  justify-content-center align-items-center logos">
                         <i class="fa-solid fa-chart-simple"></i>
                         <p class=" ms-2 mt-3 logo_title">Stats</p>
                     </div>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="text-light d-flex flex-row  justify-content-center align-items-center">
-                       <i class="fa-solid fa-signal"></i>
-                        <p class=" ms-2 mt-3 logo_title">Signals</p>
-                    </div>
+                   <div class="col-12">
+                    <div class="text-light d-flex flex-row  justify-content-center align-items-center logos">
+                      <i class="fa-solid fa-signal"></i>
+                       <p class=" ms-2 mt-3 logo_title">Signals</p>
+                   </div>
+                   </div>
                 </div>
            </div>
 
            
            <div class="row myspace2">
-               <div class="text-light d-flex  justify-content-center align-items-center">
-                   <i class="fa-solid fa-gear"></i>
-                   <p class=" ms-2 mt-3 logo_title">Admin</p>
-                </div>
+               <div class="col-12">
+                <div class="text-light d-flex  justify-content-center align-items-center">
+                  <i class="fa-solid fa-gear"></i>
+                  <p class=" ms-2 mt-3 logo_title">Admin</p>
+               </div>
+               </div>
             </div>
         </div>
        
@@ -101,7 +120,7 @@
         <!--STUDENT CONTAINER -->
         <div class="container-fluid bg-primary text-light d-flex justify-content-between">
           <div class="row">
-            <div class="col-5 col-lg-12">
+            <div class="col-9 col-lg-12">
               <div class="">
                 <span class="fs-3">Boolean</span>
                 <span class="badge rounded-pill text-bg-info">Piano Blaze</span>
@@ -117,7 +136,7 @@
           </div>
           
           <div class="row">
-              <div class="col-5 col-lg-12">
+              <div class="col-2 col-lg-12">
                 <div class="d-flex flex-column ms-5 mt-2">
                   <span>Studenti online negli ultimi 30 minuti</span>
                   <span class="fs-2">125</span>
@@ -126,10 +145,97 @@
           </div>
 
           <div class="row">
-            <div class="col-5 col-lg-12 ms-5 mt-4 myspace4">
+            <div class="col-1 col-lg-12 ms-5 mt-4 myspace4">
               <div class=" d-flex align-items-center">
-                <span>Nuovo Studente</span>
-                <span class="border border-info-subtle ms-4"><i class="fa-solid fa-plus"></i></span>
+                <span class="me-2">Nuovo Studente</span>
+                
+                <!-- SIDE MENU  -->
+                <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><div class=""><i class="fa-solid fa-plus"></i></div></button>
+
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci un nuovo studente</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <div class="container">
+                        <div class="row">
+                          <div class="col-6">
+                            <p>Nome</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+
+                          <div class="col-6">
+                            <p>Cognome</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="mt-3">Email</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+
+                          <div class="col-6">
+                            <p class="mt-3">Password</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="mt-3">Indirizzo</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-4">
+                            <p class="mt-3">Città</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                          <div class="col-4">
+                            <p class="mt-3">Stato</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                          <div class="col-4">
+                            <p class="mt-3">CAP</p>
+                            <input class="form-control me-2" type="nome" placeholder="" aria-label="nome">
+                          </div>
+                        </div>
+                        
+                        <div class="row">
+                          <div class="col-12">
+                            <p class="mt-3">Foto</p>
+                            <input class="form-control me-2" type="nome" placeholder="Nessun file selezionato" aria-label="nome">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-12 mt-3">
+                            <div class="form-check form-check-group">
+                              <input id="checkbox9" type="checkbox" aria-labelledby="checkbox9-help" checked="checked">
+                              <label for="checkbox9">Seleziona per proseguire</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row mt-4 d-flex justify-content-center">
+                          <div class="col-3">
+                            <span class="badge text-bg-primary">Salva</span>
+                          </div>
+
+                          <div class="col-3">
+                            <span class="badge text-bg-danger">Elimina</span>
+                          </div>
+                        </div>
+                             
+
+                     </div>
+                    </div>
+                  </div>
+                
               </div>
             </div>
           </div>
@@ -263,8 +369,8 @@
                 <div class="form-check form-check-group">
                   <input id="checkbox9" type="checkbox" aria-labelledby="checkbox9-help" checked="checked">
                   <label for="checkbox9">Kickoff nuove classi</label>
-                 
                 </div>
+                 
                 <hr>
                 <div class="form-check form-check-group">
                   <input id="checkbox10" type="checkbox" aria-labelledby="checkbox10-help">

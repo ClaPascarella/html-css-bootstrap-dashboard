@@ -7,8 +7,12 @@
     position: fixed;
 }
 
+.logos:hover {
+    background-color: grey;
+}
+
 .big_container {
-    /* background-color: red; */
+   
     width: 90%;
     margin-left: 8rem;
     position: absolute;
@@ -30,30 +34,4 @@
 .myspace3 {
     margin-top: -2.5rem;
 }
-
-.myspace4 {
-    margin-left: 5rem;
-}
-.logo_title {
-    display: none;
-}
-
-@media all and (min-width: 576px) {
-    .logo_title {
-        display: block;
-    }
-
-  
-}
-
-
-
-
-/* <ul class="dropdown-menu dropdown-menu-end">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul> */
-       
-
 
