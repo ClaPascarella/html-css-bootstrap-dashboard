@@ -1,8 +1,10 @@
 .sidebar {
     width: 8rem;
     background-color: rgba(5,30,52,255);
-    height: 150vh;
+    height: 140vh;
     background-image: url(../img/sidebar-bg.png);
+    margin-top: 3rem;
+    position: fixed;
 }
 
 .big_container {
@@ -22,8 +24,28 @@
 }
 
 .myspace2 {
-    margin-top: 55rem;
+    margin-top: 50rem;
 }
+
+.myspace3 {
+    margin-top: -2.5rem;
+}
+
+.myspace4 {
+    margin-left: 5rem;
+}
+.logo_title {
+    display: none;
+}
+
+@media all and (min-width: 576px) {
+    .logo_title {
+        display: block;
+    }
+
+  
+}
+
 
 
 
@@ -33,3 +55,5 @@
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul> */
        
+
+
